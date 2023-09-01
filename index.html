@@ -6,34 +6,57 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div class="wrapper">
-    <div class="header">
+<!--    header-->
+    <div class="header header-main">
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="#">
                     <img class="logo__img" src="/images/carprofit-logo1.svg" alt="logo">
                 </a>
+                <a class="phone" href="tel:+99999999999">+9 (999)999 99 99</a>
+                <ul class="messenger__list">
+                    <li class="messenger__list-item">
+                        <img class="messenger__list-img" src="./images/tg.svg" alt="tg">
+                    </li>
+                    <li class="messenger__list-item">
+                        <img class="messenger__list-img" src="./images/wh.svg" alt="wh">
+                    </li>
+                </ul>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#" >О НАС</a>
+                            <a class="menu__list-link" href="#">О НАС</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#" >БЛОГ</a>
+                            <a class="menu__list-link" href="#">БЛОГ</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#" >ВЫКУПЛЕННЫЕ АВТО</a>
+                            <a class="menu__list-link" href="#">ВЫКУПЛЕННЫЕ АВТО</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#" >КОНТАКТЫ</a>
+                            <a class="menu__list-link" href="#">КОНТАКТЫ</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </div>
+<!--    car-buyback-->
+            <section class="car-buyback">
+                <div class="car-buyback__content">
+                    <h1 class="car-buyback__title">ВЫКУП АВТО “под ключ”</h1>
+                    <h2 class="car-buyback__subtitle">От вас только желание Оценить</h2>
+                </div>
+                <button class="button button__white" type="button">оцени свой автомобиль</button>
+            </section>
+
     <div class="main"></div>
     <div class="footer"></div>
 </div>
