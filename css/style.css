@@ -17,10 +17,15 @@ a {
     color: inherit;
 }
 
+button {
+    border: none;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    background-color: black;
 }
 
 .container {
@@ -44,8 +49,10 @@ body {
     color: white;
 }
 
-.messenger__list {
+.header__social {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .menu__list {
@@ -58,14 +65,36 @@ body {
     text-transform: uppercase;
 }
 
-.car-buyback__title {
+.top__title {
     font-size: 72px;
     color: white;
     text-transform: uppercase;
 }
 
-.car-buyback__subtitle {
+.top__subtitle {
     font-size: 36px;
     color: white;
     text-transform: uppercase;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button__white {
+    background-color: white;
+}
+
+.button__white:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid white;
 }
