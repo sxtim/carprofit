@@ -1,3 +1,10 @@
+
+/*VARS*/
+:root {
+    --black: #151515;
+    --grey: #979797;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -25,7 +32,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: black;
+    background-color: #151515;
 }
 
 .container {
@@ -35,7 +42,7 @@ body {
 }
 
 .header-main {
-    background-color: black;
+    background-color: #151515;
 }
 
 .header__inner {
@@ -55,6 +62,25 @@ body {
     gap: 20px;
 }
 
+a svg #whatsapp {
+    transition: 0.5s;
+}
+
+a svg #telegram {
+    transition: 0.5s;
+}
+
+.header__social-link svg:hover #whatsapp {
+    stroke: white;
+    stroke-width: 2px;
+    fill: transparent;
+}
+
+.header__social-link svg:hover #telegram{
+    stroke: white;
+    stroke-width: 2px;
+    fill: transparent;
+}
 .menu__list {
     display: flex;
     gap: 35px;
@@ -90,11 +116,11 @@ body {
 
 .button__white {
     background-color: white;
+    transition: 0.5s;
 }
 
 .button__white:hover {
     background-color: black;
     color: white;
-    transition: 0.5s;
     border: 1px solid white;
 }
