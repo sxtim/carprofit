@@ -32,7 +32,6 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: #151515;
 }
 
 .container {
@@ -41,8 +40,13 @@ body {
     padding: 0 10px;
 }
 
+.header {
+    position: relative;
+    z-index: 10;
+}
+
 .header-main {
-    background-color: #151515;
+    background-color: transparent;
 }
 
 .header__inner {
@@ -87,9 +91,27 @@ a svg #telegram {
 }
 
 .menu__list-link {
+    position: relative;
     color: white;
     text-transform: uppercase;
 }
+
+.menu__list-link:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
+}
+
+.menu__list-link:hover:after {
+    width: 100%;
+}
+
 
 .top__title {
     font-size: 72px;
@@ -123,4 +145,32 @@ a svg #telegram {
     background-color: black;
     color: white;
     border: 1px solid white;
+}
+
+.top {
+    margin: -82px 0 0 0;
+    position: relative;
+}
+
+.top__content {
+    position: relative;
+    z-index: 2;
+}
+
+.top__image {
+    background: url("../images/top-bg1.jpeg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top__content {
+    padding: 270px 0 380px 0;
+}
+
+.top__subtitle {
+    margin: 0 0 250px 0;
 }
