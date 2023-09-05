@@ -1,4 +1,3 @@
-
 /*VARS*/
 :root {
     --black: #151515;
@@ -27,25 +26,28 @@ a {
 button {
     border: none;
 }
+
 /*title*/
 .title {
-    display: inline-block;
-    position: relative;
+    color: var(--black);
     font-size: 36px;
+    line-height: normal;
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
 }
 
 .title:after {
-    content: "";
+    content: '';
     width: 80px;
-    height: 2px;
-    background-color: white;
+    height: 3px;
+    background-color: var(--black);
     position: absolute;
-    top: 40%;
-    right: -120px;
-    /*z-index: 1;*/
+    top: 20px;
+    margin-left: 20px;
 }
+
 /*buttons*/
 .button {
     width: 250px;
@@ -122,11 +124,12 @@ a svg #telegram {
     fill: black;
 }
 
-.header__social-link svg:hover #telegram{
+.header__social-link svg:hover #telegram {
     stroke: white;
     stroke-width: 2px;
     fill: black;
 }
+
 .menu__list {
     display: flex;
     gap: 35px;
@@ -156,12 +159,13 @@ a svg #telegram {
 
 .top {
     background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 1200px;
     margin: -82px 0 0 0;
 
     @media screen and (max-width: 1680px) {
-        background-position: -450px 0;
+        background-position: -550px 0;
     }
 }
 
@@ -174,6 +178,7 @@ a svg #telegram {
     font-size: 72px;
     color: white;
     text-transform: uppercase;
+    line-height: normal;
 }
 
 .top__subtitle {
@@ -196,7 +201,7 @@ a svg #telegram {
     color: white;
 }
 
-.footer__container {
+.footer__inner {
     display: flex;
 }
 
@@ -205,8 +210,13 @@ a svg #telegram {
     margin: 0 10px;
 }
 
-.footer__contacts-title {
+.footer__title {
+    color: white;
     margin: 0 0 55px -10px;
+}
+
+.footer__title:after {
+    background-color: white;
 }
 
 .map {
@@ -216,29 +226,20 @@ a svg #telegram {
 }
 
 .footer__map {
- padding: 0 0 30px 0;
+    padding: 0 0 30px 0;
 }
 
 
-
-.footer__contacts-content {
+.footer__contacts-list {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__address p:nth-child(2) {
-    color: var(--grey);
-    font-weight: 300;
-}
 
-.footer__working-hours p:nth-child(2) {
+.footer__list-item a, p:nth-child(2) {
     color: var(--grey);
     font-weight: 300;
-}
-
-.footer__phone a {
-    color: var(--grey);
-    font-weight: 300;
+    line-height: 150%;
 }
 
 
