@@ -2,29 +2,22 @@
 :root {
     --black: #151515;
     --grey: #979797;
+    --blackout: rgba(21, 21, 21, .3 );
 }
 
-html {
-    box-sizing: border-box;
+html,
+body {
+    height: 100%;
 }
 
-*, *::after, *::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
-    border: none;
+.main {
+    flex-grow: 1;
 }
 
 /*title*/
@@ -34,7 +27,7 @@ button {
     line-height: normal;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin: 30px 0 60px 0;
     position: relative;
 }
 
@@ -158,20 +151,35 @@ a svg #telegram {
 }
 
 .top {
+    position: relative;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    min-height: 1200px;
-    margin: -82px 0 0 0;
+    background-color: var(--blackout);
+    height: 1300px;
+    margin: -350px 0 0 0;
 
     @media screen and (max-width: 1680px) {
-        background-position: -550px 0;
+        background-position: -350px 0;
     }
+}
+
+.top:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(21, 21, 21, .7);
 }
 
 .top__content {
     position: relative;
-    padding: 270px 0 0 0;
+    padding: 400px 0 0 0;
 }
 
 .top__title {
@@ -190,7 +198,7 @@ a svg #telegram {
 
 .top__banner {
     position: absolute;
-    top: 250px;
+    top: 360px;
     right: 0;
 }
 
@@ -212,7 +220,6 @@ a svg #telegram {
 
 .footer__title {
     color: white;
-    margin: 0 0 55px 0;
 }
 
 .footer__title:after {
@@ -222,7 +229,7 @@ a svg #telegram {
 .footer__form-title {
     width: 100%;
     color: white;
-    margin: 0 0 55px 110px;
+    margin: 30px 0 60px 110px;
     text-align: left;
 }
 
@@ -307,12 +314,6 @@ input:focus:-moz-placeholder {
 input:focus:-ms-input-placeholder {
     transform: translateY(-10px);
     text-indent: -60%; transition: text-indent 0.3s ease;
-}
-
-
-
-.footer__contacts-form {
-
 }
 
 .footer__button {
