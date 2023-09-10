@@ -194,6 +194,14 @@ a svg #telegram {
     right: 0;
 }
 
+/*benefits*/
+.benefits {
+
+}
+.benefits__img {
+
+}
+
 
 /*footer*/
 .footer {
@@ -282,6 +290,7 @@ a svg #telegram {
     font-weight: 300;
     color: var(--grey);
 }
+
 
 input::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease;}
 input::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease;}
