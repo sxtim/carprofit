@@ -28,6 +28,10 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
+button {
+    border: none;
+}
+
 nav ul {
     list-style:none;
 }
