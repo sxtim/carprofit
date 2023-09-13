@@ -218,7 +218,9 @@ a svg #telegram {
 .benefits__img {
     max-width: 100%;
     height: auto;
-    margin: 0 100px 0 0;
+    margin: 0 -100px 0 -50px;
+    position: relative;
+    z-index: 10;
 }
 .benefits__list {
     list-style: none;
@@ -234,7 +236,7 @@ a svg #telegram {
     padding: 10px 15px 10px 80px;
     counter-increment: my-counter;
     position: relative;
-    transition: all .5s;
+    transition: all .3s;
 }
 .benefits__item:hover{
     border: 2px solid var(--black);
