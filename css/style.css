@@ -36,7 +36,6 @@ a {
     line-height: normal;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 30px 0 60px 0;
     position: relative;
 }
 
@@ -165,7 +164,7 @@ a svg #telegram {
     background-position: top center;
     background-repeat: no-repeat;
     height: 1300px;
-    margin: -350px 0 0 0;
+    margin: -350px 0 50px 0;
 
     @media screen and (max-width: 1680px) {
         background-position: -350px 0;
@@ -211,6 +210,10 @@ a svg #telegram {
 }
 
 /*benefits*/
+.benefits {
+    margin-bottom: 50px
+}
+
 .benefits__inner {
     display: flex;
     align-items: center;
@@ -225,8 +228,6 @@ a svg #telegram {
 .benefits__list {
     list-style: none;
     counter-reset: my-counter;
-    margin: 0 0 60px 0;
-
 }
 .benefits__item{
     border: 2px solid var(--gray);
@@ -276,7 +277,42 @@ a svg #telegram {
     color: var(--black);
 
 }
+/*buyback*/
+.buyback {
+    margin-bottom: 100px;
+}
+.buyback__inner {
+    margin-top: 60px;
+}
+.buyback__image {
+}
 
+.buyback__title{
+    margin-left: 620px;
+}
+
+.buyback__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buyback__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    background-color: var(--black);
+    padding: 56px 300px 0 68px;
+    margin: 50px  0 25px 0;
+}
+
+.buyback__item-title {
+    color: white;
+}
+
+.buyback__item-text {
+    color: var(--gray);
+}
 
 /*footer*/
 .footer {
