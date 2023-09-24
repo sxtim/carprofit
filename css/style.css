@@ -1,5 +1,6 @@
 /*VARS*/
 :root {
+    --white: #ffffff;
     --black: #151515;
     --gray: #979797;
     --blackout: rgba(21, 21, 21, .7);
@@ -231,8 +232,9 @@ a svg #telegram {
 }
 .benefits__item{
     border: 2px solid var(--gray);
+    color: var(--gray);
     margin: 0 0 12px 0;
-    width: 710px;
+    width: 750px;
     height: 100px;
     padding: 10px 15px 10px 80px;
     counter-increment: my-counter;
@@ -284,8 +286,7 @@ a svg #telegram {
 .buyback__inner {
     margin-top: 60px;
 }
-.buyback__image {
-}
+
 
 .buyback__title{
     margin-left: 620px;
@@ -306,8 +307,16 @@ a svg #telegram {
     margin: 50px  0 25px 0;
 }
 
+.buyback__item-img svg:hover #car {
+    transition: all 0.5s;
+    fill: var(--white);
+}
+
 .buyback__item-title {
-    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
+    color: var(--white);
 }
 
 .buyback__item-text {
@@ -368,7 +377,7 @@ a svg #telegram {
 .footer__list-item {line-height: 150%;}
 
 
-.footer__list-item a, p:nth-child(2) {
+.footer__list-text {
     color: var(--gray);
     font-weight: 300;
     /*line-height: 150%;*/
