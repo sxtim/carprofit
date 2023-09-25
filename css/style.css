@@ -218,6 +218,7 @@ a svg #telegram {
 .benefits__inner {
     display: flex;
     align-items: center;
+    margin-top: 60px;
 }
 .benefits__img {
     max-width: 100%;
@@ -303,7 +304,7 @@ a svg #telegram {
     gap: 40px;
     list-style: none;
     background-color: var(--black);
-    padding: 56px 300px 0 68px;
+    padding: 30px 300px 30px 68px;
     margin: 50px  0 25px 0;
 }
 
@@ -321,6 +322,10 @@ a svg #telegram {
 
 .buyback__item-text {
     color: var(--gray);
+}
+
+.docs__inner {
+    margin: 60px 0 0 0;
 }
 
 /*footer*/
