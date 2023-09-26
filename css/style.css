@@ -321,6 +321,7 @@ a svg #telegram {
 }
 
 .buyback__item-text {
+    font-size: 18px;
     color: var(--gray);
 }
 
@@ -355,11 +356,59 @@ a svg #telegram {
 .docs__item-text {
     font-size: 18px;
     font-weight: 300;
-    line-height: 120%;
+    line-height: 130%;
     text-align: center;
 }
+.docs__content {
+    position: relative;
+    margin: 100px 0 0 0;
 
+}
+.docs__content-img {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    z-index: 10;
+}
+.docs__content-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
 
+.docs__content-t1 {
+    color: var(--black);
+    opacity: 80%;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 170%;
+}
+.docs__content-t1 span {
+    color: var(--gray);
+}
+.docs__content-t2 {
+    color: var(--black);
+    opacity: 70%;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding:  0 0 70px 0;
+}
+.docs__content-t2 span {
+    color: var(--gray);
+}
+.docs__content-t3 {
+    position: absolute;
+    color: rgba(151,151,151, 0.15);
+    font-size: 200px;
+    font-weight: 500;
+    /*letter-spacing: 6px;*/
+    z-index: -1;
+    bottom: -10px;
+}
 
 /*footer*/
 .footer {
