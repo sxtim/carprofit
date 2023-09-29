@@ -165,7 +165,7 @@ a svg #telegram {
     background-position: top center;
     background-repeat: no-repeat;
     height: 1300px;
-    margin: -350px 0 50px 0;
+    margin: -350px 0 100px 0;
 
     @media screen and (max-width: 1680px) {
         background-position: -350px 0;
@@ -212,7 +212,7 @@ a svg #telegram {
 
 /*benefits*/
 .benefits {
-    margin-bottom: 50px
+    margin-bottom: 100px
 }
 
 .benefits__inner {
@@ -326,7 +326,7 @@ a svg #telegram {
 }
 
 .docs {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .docs__inner {
@@ -375,7 +375,7 @@ a svg #telegram {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 420px;
 }
 
 .docs__content-t1 {
@@ -395,7 +395,7 @@ a svg #telegram {
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 1px;
-    padding:  0 0 70px 0;
+    margin:  0 0 50px 0;
 }
 .docs__content-t2 span {
     color: var(--gray);
@@ -405,9 +405,11 @@ a svg #telegram {
     color: rgba(151,151,151, 0.15);
     font-size: 200px;
     font-weight: 500;
-    /*letter-spacing: 6px;*/
     z-index: -1;
     bottom: -10px;
+}
+.carousel {
+    margin-bottom: 50px;
 }
 
 /*footer*/
