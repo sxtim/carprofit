@@ -408,10 +408,69 @@ a svg #telegram {
     z-index: -1;
     bottom: -10px;
 }
+/*carousel*/
 .carousel {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
+.carousel__title {
+    margin-left: 620px;
+}
+
+.carousel__inner {
+    margin: 60px 0 0 -7px;
+}
+
+.carousel__item {
+    cursor: pointer;
+    margin: 0 7px;
+}
+
+.carousel__item-box{
+    border: 1px solid var(--gray);
+    padding: 6px 6px 16px 6px;
+    text-align: center;
+    transition: all .5s;
+}
+.carousel__item-box:hover{
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--black);
+}
+.carousel__item-img {
+   max-width: 100%;
+    margin-bottom: 23px;
+}
+.carousel__item-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.carousel__item-text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.carousel .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+.carousel .slick-dots button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    background-color: var(--gray);
+    width: 50px;
+    height: 4px;
+    cursor: pointer;
+}
+.carousel .slick-active button {
+    background-color: var(--black);
+    height: 8px;
+}
 /*footer*/
 .footer {
     background-color: var(--black);
