@@ -354,7 +354,7 @@ a svg #telegram {
 }
 
 .docs__item-text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 130%;
     text-align: center;
@@ -441,9 +441,10 @@ a svg #telegram {
    max-width: 100%;
     margin-bottom: 23px;
 }
+
 .carousel__item-title {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 5px;
 }
 .carousel__item-text {
@@ -464,13 +465,42 @@ a svg #telegram {
     margin: 0 10px;
     background-color: var(--gray);
     width: 50px;
-    height: 4px;
+    height: 2px;
     cursor: pointer;
 }
 .carousel .slick-active button {
     background-color: var(--black);
-    height: 8px;
+    height: 4px;
 }
+/*blog*/
+.blog {
+    margin-bottom: 100px;
+}
+.blog__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.blog__item {
+    max-width: 580px;
+}
+.blog__item-img {
+    max-width: 100%;
+}
+.blog__item-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 22px;
+}
+.blog__item-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
 /*footer*/
 .footer {
     background-color: var(--black);
@@ -486,19 +516,22 @@ a svg #telegram {
     max-width: 580px;
 }
 
-.footer__title {
+.footer__contacts-title {
+    display: inline-block;
     color: white;
+    margin-bottom: 60px;
 }
 
-.footer__title:after {
+.footer__contacts-title:after {
     background-color: white;
 }
 
 .footer__form-title {
+    display: inline;
     width: 100%;
     color: white;
-    margin: 30px 0 60px 110px;
     text-align: left;
+    margin-left: 580px;
 }
 
 .footer__form-title:after {
@@ -533,6 +566,10 @@ a svg #telegram {
 
 .footer__contacts-form {
     min-width: 580px;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
 }
 
 .footer__contacts-input{
@@ -541,9 +578,8 @@ a svg #telegram {
     height: 75px;
     color: #fff;
     border: 1px solid #fff;
-    /*margin-bottom: 12px;*/
     display: block;
-    margin: 15px auto;
+    margin: 0 0 15px 0;
     font-size: 24px;
     padding: 0 15px;
     text-align: center;
@@ -586,7 +622,6 @@ input:focus:-ms-input-placeholder {
 }
 
 .footer__button {
-    display: block;
     margin: 40px auto;
 }
 
@@ -594,7 +629,7 @@ input:focus:-ms-input-placeholder {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin: 90px 0 0 65px;
+    /*margin: 90px 0 0 65px;*/
 }
 
 
