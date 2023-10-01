@@ -103,13 +103,16 @@ body {
 }
 
 .phone {
+    font-size: 36px;
     color: white;
 }
 
 .header__social {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    margin-left: -110px;
+    margin-top: 8px;
 }
 
 a svg #whatsapp {
@@ -130,6 +133,10 @@ a svg #telegram {
     stroke: white;
     stroke-width: 2px;
     fill: black;
+}
+
+.menu {
+    margin-top: 15px;
 }
 
 .menu__list {
@@ -510,6 +517,7 @@ a svg #telegram {
 .footer__inner {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 30px;
 }
 
 .footer__contacts-container {
@@ -531,7 +539,7 @@ a svg #telegram {
     width: 100%;
     color: white;
     text-align: left;
-    margin-left: 580px;
+    margin-left: 572px;
 }
 
 .footer__form-title:after {
@@ -561,14 +569,12 @@ a svg #telegram {
 .footer__list-text {
     color: var(--gray);
     font-weight: 300;
-    /*line-height: 150%;*/
 }
 
 .footer__contacts-form {
     min-width: 580px;
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
     flex-direction: column;
 }
 
@@ -626,10 +632,11 @@ input:focus:-ms-input-placeholder {
 }
 
 .footer__social {
+    margin: 40px 360px 0 0;
     display: flex;
     align-items: center;
-    gap: 20px;
-    /*margin: 90px 0 0 65px;*/
+    gap: 10px;
+
 }
 
 
