@@ -219,7 +219,7 @@ a svg #telegram {
 
 /*benefits*/
 .benefits {
-    margin-bottom: 100px
+    margin-bottom: 100px;
 }
 
 .benefits__inner {
@@ -242,8 +242,8 @@ a svg #telegram {
     border: 2px solid var(--gray);
     color: var(--gray);
     margin: 0 0 12px 0;
-    width: 750px;
-    height: 100px;
+    max-width: 720px;
+    min-height: 100px;
     padding: 10px 15px 10px 80px;
     counter-increment: my-counter;
     position: relative;
@@ -251,7 +251,6 @@ a svg #telegram {
 }
 .benefits__item:hover{
     border: 2px solid var(--black);
-    width: 770px;
 }
 
 .benefits__item:before{
@@ -382,7 +381,7 @@ a svg #telegram {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 420px;
+    margin-left: 390px;
 }
 
 .docs__content-t1 {
