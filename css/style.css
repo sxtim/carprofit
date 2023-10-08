@@ -173,10 +173,6 @@ a svg #telegram {
     background-repeat: no-repeat;
     height: 1300px;
     margin: -350px 0 100px 0;
-
-    @media screen and (max-width: 1680px) {
-        background-position: -350px 0;
-    }
 }
 
 .top:before {
@@ -227,6 +223,7 @@ a svg #telegram {
     align-items: center;
     margin-top: 60px;
 }
+
 .benefits__img {
     max-width: 100%;
     height: auto;
@@ -234,11 +231,13 @@ a svg #telegram {
     position: relative;
     z-index: 10;
 }
+
 .benefits__list {
     list-style: none;
     counter-reset: my-counter;
 }
-.benefits__item{
+
+.benefits__item {
     border: 2px solid var(--gray);
     color: var(--gray);
     margin: 0 0 12px 0;
@@ -249,11 +248,12 @@ a svg #telegram {
     position: relative;
     transition: all .3s;
 }
-.benefits__item:hover{
+
+.benefits__item:hover {
     border: 2px solid var(--black);
 }
 
-.benefits__item:before{
+.benefits__item:before {
     position: absolute;
     left: 20px;
     font-size: 36px;
@@ -264,9 +264,11 @@ a svg #telegram {
     content: '0' counter(my-counter);
     transition: all .5s;
 }
-.benefits__item:hover::before{
+
+.benefits__item:hover::before {
     color: var(--black);
 }
+
 .benefits__item-title {
     color: var(--gray);
     font-size: 24px;
@@ -274,6 +276,7 @@ a svg #telegram {
     line-height: 1.2;
     transition: all .5s;
 }
+
 .benefits__item:hover .benefits__item-title {
     color: var(--black);
 }
@@ -282,20 +285,23 @@ a svg #telegram {
     line-height: 1.2;
     transition: all .5s;
 }
+
 .benefits__item:hover .benefits__item-text {
     color: var(--black);
 
 }
+
 /*buyback*/
 .buyback {
     margin-bottom: 100px;
 }
+
 .buyback__inner {
     margin-top: 60px;
 }
 
 
-.buyback__title{
+.buyback__title {
     margin-left: 620px;
 }
 
@@ -311,7 +317,7 @@ a svg #telegram {
     list-style: none;
     background-color: var(--black);
     padding: 30px 300px 30px 68px;
-    margin: 50px  0 25px 0;
+    margin: 50px 0 25px 0;
 }
 
 .buyback__item-img svg:hover #car {
@@ -330,6 +336,7 @@ a svg #telegram {
     font-size: 18px;
     color: var(--gray);
 }
+
 .buyback__image {
     object-fit: contain;
 }
@@ -368,17 +375,20 @@ a svg #telegram {
     line-height: 130%;
     text-align: center;
 }
+
 .docs__content {
     position: relative;
     margin: 100px 0 0 0;
 
 }
+
 .docs__content-img {
     position: absolute;
     left: 0;
     bottom: -15px;
     z-index: 10;
 }
+
 .docs__content-banner {
     display: flex;
     flex-direction: column;
@@ -395,28 +405,34 @@ a svg #telegram {
     letter-spacing: 3px;
     line-height: 170%;
 }
+
 .docs__content-t1 span {
     color: var(--gray);
 }
+
 .docs__content-t2 {
     color: var(--black);
     opacity: 70%;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 1px;
-    margin:  0 0 50px 0;
+    margin: 0 0 50px 0;
 }
+
 .docs__content-t2 span {
     color: var(--gray);
 }
+
 .docs__content-t3 {
     position: absolute;
-    color: rgba(151,151,151, 0.15);
+    color: rgba(151, 151, 151, 0.15);
     font-size: 200px;
     font-weight: 500;
     z-index: -1;
     bottom: -10px;
+    right: 0;
 }
+
 /*carousel*/
 .carousel {
     margin-bottom: 100px;
@@ -435,19 +451,21 @@ a svg #telegram {
     margin: 0 7px;
 }
 
-.carousel__item-box{
+.carousel__item-box {
     border: 1px solid var(--gray);
     padding: 6px 6px 16px 6px;
     text-align: center;
     transition: all .5s;
 }
-.carousel__item-box:hover{
+
+.carousel__item-box:hover {
     color: var(--white);
     background-color: var(--black);
     border: 1px solid var(--black);
 }
+
 .carousel__item-img {
-   max-width: 100%;
+    max-width: 100%;
     margin-bottom: 23px;
 }
 
@@ -456,6 +474,7 @@ a svg #telegram {
     font-weight: 400;
     margin-bottom: 5px;
 }
+
 .carousel__item-text {
     font-size: 18px;
     font-weight: 300;
@@ -467,6 +486,7 @@ a svg #telegram {
     margin-top: 50px;
     list-style: none;
 }
+
 .carousel .slick-dots button {
     font-size: 0;
     border: none;
@@ -477,32 +497,39 @@ a svg #telegram {
     height: 2px;
     cursor: pointer;
 }
+
 .carousel .slick-active button {
     background-color: var(--black);
     height: 4px;
 }
+
 /*blog*/
 .blog {
     margin-bottom: 100px;
 }
+
 .blog__inner {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-top: 60px;
 }
+
 .blog__item {
     max-width: 580px;
 }
+
 .blog__item-img {
     max-width: 100%;
 }
+
 .blog__item-title {
     font-size: 24px;
     font-weight: 400;
     line-height: 150%;
     margin-bottom: 5px;
 }
+
 .blog__item-text {
     font-size: 18px;
     font-weight: 300;
@@ -519,8 +546,10 @@ a svg #telegram {
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
+
 
 .footer__contacts-container {
     display: block;
@@ -542,7 +571,8 @@ a svg #telegram {
     width: 100%;
     color: white;
     text-align: left;
-    margin-left: 572px;
+    margin-bottom: 60px;
+
 }
 
 .footer__form-title:after {
@@ -556,9 +586,9 @@ a svg #telegram {
 }
 
 .footer__map {
+    display: block;
     max-width: 580px;
     padding: 0 0 30px 0;
-    object-fit: contain;
 }
 
 
@@ -567,7 +597,9 @@ a svg #telegram {
     justify-content: space-between;
 }
 
-.footer__list-item {line-height: 150%;}
+.footer__list-item {
+    line-height: 150%;
+}
 
 
 .footer__list-text {
@@ -576,13 +608,13 @@ a svg #telegram {
 }
 
 .footer__contacts-form {
-    min-width: 580px;
+    max-width: 580px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.footer__contacts-input{
+.footer__contacts-input {
     background-color: transparent;
     width: 450px;
     height: 75px;
@@ -595,7 +627,7 @@ a svg #telegram {
     text-align: center;
 }
 
-.footer__contacts-input::placeholder{
+.footer__contacts-input::placeholder {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -605,30 +637,49 @@ a svg #telegram {
 }
 
 
-input::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease;}
-input::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease;}
-input:-moz-placeholder                 {text-indent: 0;   transition: text-indent 0.3s ease;}
-input:-ms-input-placeholder            {text-indent: 0;   transition: text-indent 0.3s ease;}
+input::-webkit-input-placeholder {
+    text-indent: 0;
+    transition: text-indent 0.3s ease;
+}
+
+input::-moz-placeholder {
+    text-indent: 0;
+    transition: text-indent 0.3s ease;
+}
+
+input:-moz-placeholder {
+    text-indent: 0;
+    transition: text-indent 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+    text-indent: 0;
+    transition: text-indent 0.3s ease;
+}
 
 
 input:focus::-webkit-input-placeholder {
     transform: translateY(-10px);
-    text-indent: -60%; transition: text-indent 0.3s ease;
+    text-indent: -60%;
+    transition: text-indent 0.3s ease;
 }
 
 input:focus::-moz-placeholder {
     transform: translateY(-10px);
-    text-indent: -60%; transition: text-indent 0.3s ease;
+    text-indent: -60%;
+    transition: text-indent 0.3s ease;
 }
 
 input:focus:-moz-placeholder {
     transform: translateY(-10px);
-    text-indent: -60%; transition: text-indent 0.3s ease;
+    text-indent: -60%;
+    transition: text-indent 0.3s ease;
 }
 
 input:focus:-ms-input-placeholder {
     transform: translateY(-10px);
-    text-indent: -60%; transition: text-indent 0.3s ease;
+    text-indent: -60%;
+    transition: text-indent 0.3s ease;
 }
 
 .footer__button {
@@ -643,8 +694,45 @@ input:focus:-ms-input-placeholder {
 
 }
 
-@media (max-width: 1198px) {
+@media (max-width: 1680px) {
+    .top {
+        background-position: -350px 0;
+    }
+}
 
+@media (max-width: 1450px) {
+    .top {
+        background-position: -650px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .top {
+        background-position: -930px 0;
+    }
+}
+
+@media (max-width: 1070px) {
+    .title {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer__form-title {
+        text-align: left;
+    }
+
+    .footer__inner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 30px;
+        gap: 30px;
+    }
+
+    .footer__contacts-form {
+        min-width: 580px;
+    }
 }
 
 
