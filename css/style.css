@@ -111,7 +111,9 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    /*margin-left: -110px;*/
+    padding-right: 100px ;
+
+
     margin-top: 8px;
 }
 
@@ -190,7 +192,7 @@ a svg #telegram {
 
 .top__content {
     position: relative;
-    padding: 400px 0 0 0;
+    padding: 500px 0 0 0;
 }
 
 .top__title {
@@ -387,6 +389,8 @@ a svg #telegram {
     left: 0;
     bottom: -15px;
     z-index: 10;
+    max-width: 100%;
+    height: auto;
 }
 
 .docs__content-banner {
@@ -687,28 +691,33 @@ input:focus:-ms-input-placeholder {
 }
 
 .footer__social {
-    margin: 40px 360px 0 0;
     display: flex;
     align-items: center;
     gap: 10px;
 
 }
+/*MEDIA*/
+@media (max-width: 1920px) {
+    .top {
+        height: 1100px;
+    }
+}
 
 @media (max-width: 1680px) {
+    /*.top {*/
+    /*    background-position: -350px 0;*/
+    /*}*/
+}
+
+@media (max-width: 1450px) {
     .top {
         background-position: -350px 0;
     }
 }
 
-@media (max-width: 1450px) {
-    .top {
-        background-position: -650px 0;
-    }
-}
-
 @media (max-width: 1200px) {
     .top {
-        background-position: -930px 0;
+        background-position: -680px 0;
     }
 }
 
