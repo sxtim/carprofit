@@ -267,6 +267,11 @@ body {
     justify-content: space-between;
 }
 
+.logo__img {
+    width: 100px;
+    height: auto;
+}
+
 .phone {
     font-size: 36px;
     color: white;
@@ -679,7 +684,7 @@ a svg #telegram {
 
 .blog__inner {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     gap: 15px;
     margin-top: 60px;
 }
@@ -777,6 +782,7 @@ a svg #telegram {
 }
 
 .footer__contacts-form {
+    position: relative;
     max-width: 580px;
     display: flex;
     align-items: center;
@@ -851,20 +857,42 @@ input:focus:-ms-input-placeholder {
     transition: text-indent 0.3s ease;
 }
 
-.footer__button {
+.form__button {
     margin: 40px auto;
 }
 
-.footer__social {
+.form__policy-container{
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 10px;
-
+    justify-content: space-between;
 }
+
+.policy {
+    /*text-align: center;*/
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.form__logo {
+    width: 70px;
+    height: auto;
+}
+
+
+/*.footer__social {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+
+/*}*/
+
 /*MEDIA*/
-@media (max-width: 1920px) {
+@media (max-width: 1925px) {
     .top {
         height: 1100px;
+    }
+    .top__content {
+        padding-top: 395px;
     }
 }
 
@@ -877,6 +905,18 @@ input:focus:-ms-input-placeholder {
 @media (max-width: 1200px) {
     .top {
         background-position: -680px 0;
+    }
+    .top__banner {
+        position: static;
+        margin-bottom: 110px;
+    }
+    .top__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top__subtitle {
+        margin-bottom: 20px;
     }
 }
 
@@ -901,6 +941,10 @@ input:focus:-ms-input-placeholder {
     .footer__contacts-form {
         min-width: 580px;
     }
+}
+
+@media (max-width: 998px) {
+
 }
 
 
