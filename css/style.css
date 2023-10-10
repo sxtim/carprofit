@@ -74,6 +74,157 @@ a {
     border: 1px solid white;
 }
 
+/*multibutton*/
+
+/*.whatsapp {*/
+/*    background: #30d64f;*/
+/*}*/
+
+/*.viber {*/
+/*    background: #7b519d;*/
+/*}*/
+
+/*.call {*/
+/*    background: #ff2241;*/
+/*}*/
+
+/*.phone {*/
+/*    background: #03a9f4;*/
+/*}*/
+
+/*.yellow {*/
+/*    background: #ffce09;*/
+/*}*/
+
+.multibutton {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 70px;
+    height: 70px;
+    transition: 0.2s ease;
+}
+
+.multibutton:hover {
+    width: auto;
+    height: auto;
+}
+
+.multibutton:hover .multibutton__list {
+    position: relative;
+    top: auto;
+    bottom: 10px;
+    visibility: visible;
+}
+
+.multibutton:hover .multibutton__item {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease;
+    transform: scaleX(1) scaleY(1) translateY(0);
+}
+
+.multibutton__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 13px;
+    top: 80px;
+    visibility: hidden;
+    transition: 0.3s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.multibutton__title {
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--gray);
+    border-radius: 20px;
+    padding: 13px;
+}
+
+.multibutton__item {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    transform: scaleX(0.4) scaleY(0.4) translateY(150px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.multibutton__button {
+    width: 70px;
+    height: 70px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: animation_button 3s linear infinite;
+    transition: all 200ms ease-out;
+}
+
+@keyframes animation_button {
+    0% {
+        box-shadow: 0 0 0 0 #ffba26, 0 0 0 0 rgba(255, 206, 9, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 7px rgba(255,186, 38, 0), 0 0 0 3px rgba(255, 206, 9, 0.7);
+    }
+    80% {
+        box-shadow: 0 0 0 13px rgba(255, 186, 38, 0), 0 0 0 6px rgba(255,206, 9, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 16px rgba(255, 186, 38, 0), 0 0 0 8px rgba(255, 206, 9, 0);
+    }
+}
+
+.multibutton__button svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--black);
+}
+
+.multibutton__item:nth-child(1) .multibutton__icon{
+    background: var(--gray);
+}
+
+.multibutton__item:nth-child(2) .multibutton__icon{
+    background: var(--gray);
+}
+
+.multibutton__item:nth-child(3) .multibutton__icon{
+    background: var(--gray);
+}
+
+.multibutton__item:nth-child(4) .multibutton__icon{
+    background: var(--gray);
+}
+
+.multibutton__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.multibutton__icon svg{
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -701,12 +852,6 @@ input:focus:-ms-input-placeholder {
     .top {
         height: 1100px;
     }
-}
-
-@media (max-width: 1680px) {
-    /*.top {*/
-    /*    background-position: -350px 0;*/
-    /*}*/
 }
 
 @media (max-width: 1450px) {
