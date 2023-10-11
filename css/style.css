@@ -76,26 +76,6 @@ a {
 
 /*multibutton*/
 
-/*.whatsapp {*/
-/*    background: #30d64f;*/
-/*}*/
-
-/*.viber {*/
-/*    background: #7b519d;*/
-/*}*/
-
-/*.call {*/
-/*    background: #ff2241;*/
-/*}*/
-
-/*.phone {*/
-/*    background: #03a9f4;*/
-/*}*/
-
-/*.yellow {*/
-/*    background: #ffce09;*/
-/*}*/
-
 .multibutton {
     position: fixed;
     right: 30px;
@@ -279,9 +259,10 @@ body {
 
 .header__social {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 10px;
-    padding-right: 100px ;
+    padding-right: 50px ;
+    padding-top: 3px;
 
 
     margin-top: 8px;
@@ -492,6 +473,10 @@ a svg #telegram {
     margin: 50px 0 25px 0;
 }
 
+.buyback__item-img {
+    margin-bottom: 12px;
+}
+
 .buyback__item-img svg:hover #car {
     transition: all 0.5s;
     fill: var(--white);
@@ -523,6 +508,7 @@ a svg #telegram {
 
 .docs__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -918,6 +904,10 @@ input:focus:-ms-input-placeholder {
     .top__subtitle {
         margin-bottom: 20px;
     }
+    .buyback__list {
+                          /*min  default   min           min media  наш media  min media*/
+        padding-right: calc(100px + (300 - 100) * ((100vw - 998px) / (1200 - 998)));
+    }
 }
 
 @media (max-width: 1070px) {
@@ -944,7 +934,26 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 998px) {
+    .buyback__list {
+        text-align: center;
+        padding: 60px 0 60px 0;
+        margin: 0;
+        width: 100%;
+    }
 
+    .buyback__item {
+        margin: 0 auto;
+        max-width: 200px;
+    }
+    .buyback__item-title {
+        text-align: center;
+    }
+    .buyback__item-text {
+        text-align: center;
+    }
+    .buyback__image {
+        display: none;
+    }
 }
 
 
