@@ -1,38 +1,10 @@
+// CAROUSEL
 $(function(){
   $('.carousel__inner').slick({
     arrows: false,
     dots: true,
     slidesToShow: 3,
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //
   // $('.carousel__inner').slick({
   //   arrows: false,
@@ -65,5 +37,12 @@ $(function(){
   // )
   // wow.init();
   //
-
 });
+
+// BURGER
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__list');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu__list--active');
+})
