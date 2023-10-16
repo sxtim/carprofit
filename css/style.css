@@ -505,11 +505,6 @@ a svg #telegram {
     margin-bottom: 12px;
 }
 
-.buyback__item-img svg:hover #car {
-    transition: all 0.5s;
-    fill: var(--white);
-}
-
 .buyback__item-title {
     font-size: 24px;
     font-weight: 300;
