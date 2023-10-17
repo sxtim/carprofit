@@ -251,6 +251,7 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
+    /*overflow: hidden;*/
 }
 
 .header {
@@ -743,7 +744,6 @@ a svg #telegram {
 }
 
 .footer__contacts-title {
-    display: inline-block;
     color: white;
     margin-bottom: 60px;
 }
@@ -767,8 +767,8 @@ a svg #telegram {
 
 .footer__map {
     display: block;
-    width: 580px;
-    height: 370px;
+    max-width: 580px;
+    height: 400px;
     padding: 0 0 30px 0;
 }
 
@@ -873,7 +873,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .form__button {
-    margin: 40px auto;
+    margin: 25px auto;
 }
 
 .form__policy-container{
@@ -946,16 +946,30 @@ input:focus:-ms-input-placeholder {
         margin-left: 0;
     }
 
-    .footer__form-title {
-        text-align: left;
-    }
-
     .footer__inner {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         padding-bottom: 30px;
-        gap: 30px;
+        gap: 50px;
+    }
+
+    .footer__form-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .footer__form-title.title:after {
+        display: none;
+    }
+
+    .footer__contacts-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .footer__contacts-title.title:after {
+        display: none;
     }
 
     .footer__contacts-form {
@@ -1091,8 +1105,12 @@ input:focus:-ms-input-placeholder {
         width: 180px;
     }
 
-    ._block {
+    ._section {
         margin-bottom: 50px;
+    }
+
+    ._inner {
+        margin-top: 20px;
     }
 
     .logo__img {
@@ -1120,12 +1138,25 @@ input:focus:-ms-input-placeholder {
         flex-direction: column;
     }
 
+    .docs__content-t1 {
+        font-size: 22px;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .docs__content-t2 {
+        font-size: 28px;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
     .docs__content-t3 {
-        font-size: 100px;
+        font-size: 90px;
+        padding-bottom: 20px;
     }
 
     .footer__map {
-        width: 30px;
+        max-width: 450px;
     }
 }
 
@@ -1135,7 +1166,7 @@ input:focus:-ms-input-placeholder {
     }
 
     .logo__img {
-        width: 40px;
+        width: 50px;
     }
 
     .phone {
@@ -1150,8 +1181,25 @@ input:focus:-ms-input-placeholder {
     .top__subtitle {
         font-size: 18px;
     }
+
+    .docs__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .docs__content-t3 {
+        font-size: 70px;
+         }
+
     .carousel .slick-dots button{
         width: 30px;
+    }
+
+    .footer__list-title {
+        font-size: 16px;
+    }
+
+    .footer__list-text {
+        font-size: 12px;
     }
 }
 
