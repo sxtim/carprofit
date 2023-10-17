@@ -248,9 +248,9 @@ body {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1260px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .header {
@@ -279,7 +279,7 @@ body {
 .phone {
     position: relative;
     z-index: 8;
-    font-size: 36px;
+    font-size: 30px;
     color: white;
 }
 
@@ -287,13 +287,10 @@ body {
     position: relative;
     z-index: 8;
     display: flex;
-    align-items: end;
+    text-align: center;
+    justify-content: center;
     gap: 10px;
-    padding-right: 50px ;
-    padding-top: 3px;
-
-
-    margin-top: 8px;
+    bottom: -2px;
 }
 
 a svg #whatsapp {
@@ -317,7 +314,7 @@ a svg #telegram {
 }
 
 .menu {
-    margin-top: 15px;
+
 }
 
 .menu__list {
@@ -386,6 +383,7 @@ a svg #telegram {
     font-size: 36px;
     color: white;
     text-transform: uppercase;
+    line-height: 150%;
 }
 
 .top__banner {
@@ -959,7 +957,7 @@ input:focus:-ms-input-placeholder {
 
 @media (max-width: 998px) {
     .top__title {
-        font-size: 64px;
+        font-size: 54px;
         text-align: center;
     }
 
@@ -1045,6 +1043,11 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 840px) {
+    .top__subtitle {
+        text-align: center;
+        font-size: 28px;
+    }
+
     .title:after {
         display: none;
     }
@@ -1061,6 +1064,23 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 690px) {
+    .logo__img {
+        width: 60px;
+    }
+
+    .phone {
+        font-size: 20px;
+    }
+
+    .top {
+        background-position: -700px 0;
+    }
+
+    .top__banner {
+        width: 120px;
+        height: auto;
+    }
+
     .docs__content-img {
 
     }
@@ -1075,6 +1095,34 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 520px) {
+    .button {
+        font-size: 15px;
+        width: 180px;
+    }
+
+    .top {
+        height: 940px;
+    }
+
+
+    .logo__img {
+        width: 40px;
+    }
+
+    .phone {
+        font-size: 16px;
+    }
+
+    .top__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .top__subtitle {
+        font-size: 18px;
+    }
+
+
     .carousel .slick-dots button{
         width: 30px;
     }
