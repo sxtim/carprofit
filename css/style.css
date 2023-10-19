@@ -378,6 +378,10 @@ a svg #telegram {
     line-height: normal;
 }
 
+.top__title p {
+    display: inline-block;
+}
+
 .top__subtitle {
     margin: 0 0 250px 0;
     font-size: 36px;
@@ -966,6 +970,10 @@ input:focus:-ms-input-placeholder {
         display: none;
     }
 
+    .footer__contacts-list {
+        justify-content: space-between;
+    }
+
     .footer__contacts-form {
         max-width: 580px;
     }
@@ -1005,6 +1013,11 @@ input:focus:-ms-input-placeholder {
         display: flex;
         flex-direction: column;
     }
+
+    .benefits__item-title {
+        color: var(--black);
+    }
+
     .buyback__list {
         width: 100%;
         text-align: center;
@@ -1055,9 +1068,18 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 768px) {
+    .top__title {
+        text-align: center;
+        font-size: 40px;
+    }
+
     .top__subtitle {
         text-align: center;
-        font-size: 28px;
+        font-size: 20px;
+    }
+
+    .top {
+        background-position: -650px 0;
     }
 
     .title:after {
@@ -1113,6 +1135,10 @@ input:focus:-ms-input-placeholder {
         width: 180px;
     }
 
+    .top__button {
+        margin-top: 60px;
+    }
+
     ._section {
         margin-bottom: 50px;
     }
@@ -1130,16 +1156,35 @@ input:focus:-ms-input-placeholder {
     }
 
     .top {
-        background-position: -600px 0;
+        background-position: -1000px 100px;
     }
 
-    .top__banner {
-        width: 120px;
+    .top__content {
+        position: relative;
+    }
+
+    .top__banner  {
+        display: inline-block;
+        position: absolute;
+        width: 100px;
         height: auto;
+        margin-top: 400px;
+    }
+
+    .top__subtitle {
+        margin-top: 15px;
     }
 
     .top__button {
-        margin-bottom: 150px;
+        margin-bottom: 180px;
+    }
+
+    .benefits__item-title {
+        font-size: 18px;
+    }
+
+    .benefits__item-text {
+        font-size: 14px;
     }
 
     .blog__inner {
@@ -1189,6 +1234,10 @@ input:focus:-ms-input-placeholder {
     .top__subtitle {
         font-size: 18px;
     }
+    .top__banner  {
+        margin-top: 350px;
+    }
+
 
     .docs__list {
         grid-template-columns: repeat(1, 1fr);
