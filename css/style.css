@@ -1064,10 +1064,24 @@ input:focus:-ms-input-placeholder {
         display: none;
     }
 
+    .benefits__item {
+        padding: 6px 6px 6px 46px;
+
+    }
+
     .benefits__item:before {
-        left: 20px;
-        top: 43%;
-        transform: rotate(270deg) translate(50%);
+        font-size: 24px;
+        line-height: 36px;
+        left: 6px;
+        transform: rotate(270deg);
+    }
+
+    .benefits__item-title {
+        font-size: 20px;
+    }
+
+    .benefits__item-text {
+        font-size: 16px;
     }
 
     .docs__list {
