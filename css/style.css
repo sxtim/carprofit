@@ -1021,22 +1021,36 @@ input:focus:-ms-input-placeholder {
     .buyback__list {
         width: 100%;
         text-align: center;
-        margin: 0;
-        padding-left: 0;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-bottom: 60px;
     }
     .buyback__item {
-        width: 100%;
-        margin: 0 auto;
-        max-width: 200px;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        max-width: 350px;
+        margin-left: 25px;
+        padding-right: 20px;
+    }
+
+    .buyback__item-img {
+        width: 70px;
+        height: auto;
+        margin: 0 20px 0  0;
     }
     .buyback__item-title {
-        text-align: center;
+        font-size: 18px;
+        text-align: left;
     }
     .buyback__item-text {
-        text-align: center;
+        font-size: 14px;
+        text-align: left;
     }
+
     .buyback__image {
-        display: none;
+        width: 35%;
+        height: auto;
     }
 
     .docs__content-img {
@@ -1104,6 +1118,14 @@ input:focus:-ms-input-placeholder {
 
     .benefits__item-text {
         font-size: 16px;
+    }
+
+    .buyback__list {
+        padding-left: 10px;
+    }
+
+    .buyback__image {
+        display: none;
     }
 
     .docs__list {
@@ -1177,14 +1199,6 @@ input:focus:-ms-input-placeholder {
 
     .top__button {
         margin-bottom: 180px;
-    }
-
-    .benefits__item-title {
-        font-size: 18px;
-    }
-
-    .benefits__item-text {
-        font-size: 14px;
     }
 
     .blog__inner {
