@@ -254,6 +254,10 @@ body {
     /*overflow: hidden;*/
 }
 
+._section {
+    margin-bottom: 70px;
+}
+
 .header {
     position: relative;
     z-index: 10;
@@ -350,7 +354,7 @@ a svg #telegram {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    margin: -350px 0 100px 0;
+    margin: -350px 0 70px 0;
 }
 
 .top:before {
@@ -401,10 +405,6 @@ a svg #telegram {
 }
 
 /*benefits*/
-.benefits {
-    margin-bottom: 100px;
-}
-
 .benefits__inner {
     display: flex;
     align-items: center;
@@ -479,10 +479,6 @@ a svg #telegram {
 }
 
 /*buyback*/
-.buyback {
-    margin-bottom: 100px;
-}
-
 .buyback__inner {
     margin-top: 60px;
 }
@@ -504,7 +500,7 @@ a svg #telegram {
     list-style: none;
     background-color: var(--black);
     padding: 30px 300px 30px 68px;
-    margin: 50px 0 25px 0;
+    /*margin: 50px 0 25px 0;*/
 }
 
 .buyback__item-img {
@@ -525,6 +521,7 @@ a svg #telegram {
 
 .buyback__image {
     object-fit: contain;
+    margin-bottom: -30px;
 }
 
 .docs {
@@ -542,7 +539,6 @@ a svg #telegram {
     justify-content: space-around;
 }
 
-
 .docs__list-item {
     display: flex;
     flex-direction: column;
@@ -550,10 +546,6 @@ a svg #telegram {
     justify-content: center;
     gap: 20px;
     padding: 10px;
-}
-
-.docs__list-img {
-
 }
 
 .docs__item-title {
@@ -625,9 +617,6 @@ a svg #telegram {
 }
 
 /*carousel*/
-.carousel {
-    margin-bottom: 100px;
-}
 
 .carousel__title {
     margin-left: 620px;
@@ -695,14 +684,11 @@ a svg #telegram {
 }
 
 /*blog*/
-.blog {
-    margin-bottom: 100px;
-}
 
 .blog__inner {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 30px;
     margin-top: 60px;
 }
 
@@ -737,7 +723,8 @@ a svg #telegram {
 .footer__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -770,8 +757,8 @@ a svg #telegram {
 
 .footer__map {
     display: block;
-    max-width: 580px;
-    height: 320px;
+    /*max-width: 580px;*/
+    height: 450px;
     padding-bottom: 5px;
 }
 
@@ -884,13 +871,13 @@ input:focus:-ms-input-placeholder {
 .form__policy-container{
     width: 100%;
     display: flex;
-    gap: 100px;
+    gap: 15px;
     justify-content: space-between;
 }
 
 .policy {
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 200;
 }
 
@@ -944,12 +931,13 @@ input:focus:-ms-input-placeholder {
         margin-left: 0;
     }
 
+    ._section {
+        margin-bottom: 50px;
+    }
+
     .footer__inner {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding-bottom: 30px;
-        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
     }
 
     .footer__form-title {
@@ -1027,7 +1015,6 @@ input:focus:-ms-input-placeholder {
     }
     .buyback__item {
         display: flex;
-        /*justify-content: center;*/
         align-items: center;
         max-width: 350px;
         margin-left: 25px;
@@ -1049,7 +1036,7 @@ input:focus:-ms-input-placeholder {
     }
 
     .buyback__image {
-        width: 35%;
+        width: 28%;
         height: auto;
     }
 
@@ -1062,7 +1049,11 @@ input:focus:-ms-input-placeholder {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
 
+    .docs__list-img {
+        width: 70px;
+        height: auto;
     }
 
     .docs__content-banner {
@@ -1162,7 +1153,7 @@ input:focus:-ms-input-placeholder {
     }
 
     ._section {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     ._inner {
@@ -1205,6 +1196,10 @@ input:focus:-ms-input-placeholder {
         flex-direction: column;
     }
 
+    .docs__content {
+        margin-top: 35px;
+    }
+
     .docs__content-t1 {
         font-size: 22px;
         line-height: 100%;
@@ -1220,6 +1215,10 @@ input:focus:-ms-input-placeholder {
     .docs__content-t3 {
         font-size: 90px;
         padding-bottom: 20px;
+    }
+
+    .carousel .slick-dots button{
+        width: 28px;
     }
 
     .footer__map {
@@ -1260,10 +1259,6 @@ input:focus:-ms-input-placeholder {
     .docs__content-t3 {
         font-size: 70px;
          }
-
-    .carousel .slick-dots button{
-        width: 30px;
-    }
 
     .footer__list-title {
         font-size: 16px;
