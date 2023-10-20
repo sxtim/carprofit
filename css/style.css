@@ -145,8 +145,6 @@ a {
     visibility: hidden;
 }
 
-
-
 .multibutton__button {
     width: 70px;
     height: 70px;
@@ -316,10 +314,6 @@ a svg #telegram {
     stroke: white;
     stroke-width: 2px;
     fill: black;
-}
-
-.menu {
-
 }
 
 .menu__list {
@@ -1263,6 +1257,12 @@ input:focus:-ms-input-placeholder {
 
     .carousel .slick-dots button{
         width: 28px;
+    }
+
+    .blog__button {
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
     }
 
     .footer__map {
