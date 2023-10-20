@@ -251,7 +251,7 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 ._section {
@@ -406,16 +406,18 @@ a svg #telegram {
 
 /*benefits*/
 .benefits__inner {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: right;
     margin-top: 60px;
 }
 
 .benefits__img {
+    position: absolute;
     max-width: 100%;
     height: auto;
-    margin: 0 -100px 0 -50px;
-    position: relative;
+    left: 0;
     z-index: 1;
 }
 
@@ -521,11 +523,6 @@ a svg #telegram {
 
 .buyback__image {
     object-fit: contain;
-    margin-bottom: -30px;
-}
-
-.docs {
-    margin-bottom: 100px;
 }
 
 .docs__inner {
@@ -561,13 +558,13 @@ a svg #telegram {
 
 .docs__content {
     position: relative;
-    margin: 100px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 .docs__content-img {
     position: absolute;
     left: 0;
-    bottom: -15px;
+    bottom: 0;
     max-width: 100%;
     height: auto;
 }
@@ -599,7 +596,7 @@ a svg #telegram {
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 1px;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .docs__content-t2 span {
@@ -610,10 +607,15 @@ a svg #telegram {
     position: absolute;
     color: rgba(151, 151, 151, 0.15);
     font-size: 200px;
+    line-height: 120%;
     font-weight: 500;
     z-index: -1;
-    bottom: -10px;
+    bottom: 0;
     right: 0;
+}
+
+.docs__button {
+    margin-bottom: 30px;
 }
 
 /*carousel*/
@@ -935,6 +937,20 @@ input:focus:-ms-input-placeholder {
     .top__subtitle {
         margin-bottom: 20px;
     }
+
+    .benefits__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefits__item-title {
+        color: var(--black);
+    }
+
+    .benefits__img {
+        position: static;
+    }
+
     .buyback__list {
                           /*min  default   min           min media  наш media  min media*/
         padding-right: calc(100px + (300 - 100) * ((100vw - 998px) / (1200 - 998)));
@@ -1013,15 +1029,6 @@ input:focus:-ms-input-placeholder {
         transform: translateY(0);
     }
 
-    .benefits__inner {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .benefits__item-title {
-        color: var(--black);
-    }
-
     .buyback__list {
         width: 100%;
         text-align: center;
@@ -1073,7 +1080,6 @@ input:focus:-ms-input-placeholder {
     }
 
     .docs__content-banner {
-
         margin: 0;
         text-align: center;
         justify-content: center;
@@ -1139,6 +1145,23 @@ input:focus:-ms-input-placeholder {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+    }
+
+    .docs__content-t1 {
+        font-size: 24px;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .docs__content-t2 {
+        font-size: 32px;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .docs__content-t3 {
+        font-size: 110px;
+        margin-bottom: 20px;
     }
 
     .docs__item-title {
@@ -1235,8 +1258,7 @@ input:focus:-ms-input-placeholder {
     }
 
     .docs__content-t3 {
-        font-size: 90px;
-        padding-bottom: 20px;
+        font-size: 86px;
     }
 
     .carousel .slick-dots button{
@@ -1289,6 +1311,10 @@ input:focus:-ms-input-placeholder {
     .docs__content-t3 {
         font-size: 70px;
          }
+
+    .docs__content-t2 {
+        font-size: 20px;
+    }
 
     .footer__list-title {
         font-size: 16px;
