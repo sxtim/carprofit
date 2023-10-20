@@ -251,7 +251,7 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 ._section {
@@ -694,6 +694,7 @@ a svg #telegram {
 
 .blog__item {
     max-width: 580px;
+    flex-basis: 50%;
 }
 
 .blog__item-img {
@@ -708,10 +709,25 @@ a svg #telegram {
 }
 
 .blog__item-text {
+    overflow: hidden;
+    position: relative;
+    max-height: 70px;
     font-size: 18px;
     font-weight: 300;
     line-height: 130%;
     margin-bottom: 20px;
+}
+
+.blog__item-text:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 100%);
+    pointer-events: none;
 }
 
 /*footer*/
@@ -721,10 +737,10 @@ a svg #telegram {
 }
 
 .footer__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-column-gap: 20px;*/
+    /*grid-row-gap: 30px;*/
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -732,7 +748,7 @@ a svg #telegram {
 
 .footer__contacts-container {
     display: block;
-    max-width: 580px;
+    /*max-width: 580px;*/
 }
 
 .footer__contacts-title {
@@ -772,7 +788,7 @@ a svg #telegram {
 .footer__contacts-list {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
 }
 
 .footer__list-item {
@@ -1140,6 +1156,12 @@ input:focus:-ms-input-placeholder {
     .docs__list-item {
         gap: 10px;
     }
+
+    .blog__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1223,6 +1245,14 @@ input:focus:-ms-input-placeholder {
 
     .footer__map {
         max-width: 450px;
+    }
+
+    .footer__list-title {
+        font-size: 14px;
+    }
+
+    .footer__list-text {
+        font-size: 14px;
     }
 }
 
