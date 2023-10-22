@@ -345,6 +345,10 @@ a svg #telegram {
     text-transform: uppercase;
 }
 
+.menu__list-link--active {
+    color: var(--gray);
+}
+
 .menu__list-link:after {
     content: "";
     width: 0;
@@ -773,17 +777,18 @@ a svg #telegram {
     font-size: 18px;
     font-weight: 400;
     line-height: 130%;
-
-    text-transform: lowercase;
     margin-top: 30px;
+    text-decoration: underline;
+
 }
 
 /*partners*/
-
 .partners__carousel {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-shrink: 1;
 }
 
 .partners__carousel-img {
@@ -1031,11 +1036,6 @@ input:focus:-ms-input-placeholder {
         font-size: 20px;
     }
 
-    .footer__inner {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-flow: dense;
-    }
-
     .footer__form-title {
         text-align: center;
         margin-bottom: 25px;
@@ -1267,10 +1267,13 @@ input:focus:-ms-input-placeholder {
         align-items: center;
     }
 
-    /*.partners__carousel-img {*/
-    /*    max-width: 100px;*/
-    /*    height: auto;*/
-    /*}*/
+    .partners__carousel {
+        flex-wrap: wrap;
+    }
+
+    .partners__carousel-item {
+        max-width: 30%;
+    }
 }
 
 @media (max-width: 480px) {
