@@ -39,9 +39,14 @@ $(function () {
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu__list');
 const html = document.querySelector('html');
+const multiBtn = document.querySelector('multibutton');
 
 menuBtn.addEventListener('click', () => {
     html.classList.toggle('unscroll');
     menu.classList.toggle('menu__list--active');
-    menuBtn.classList.toggle('open');
+    menuBtn.classList.toggle('menu__btn--open');
+})
+
+multiBtn.addEventListener('click', () => {
+    multiBtn.classList.toggle('open')
 })
