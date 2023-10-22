@@ -38,7 +38,10 @@ $(function () {
 // BURGER
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu__list');
+const html = document.querySelector('html');
 
 menuBtn.addEventListener('click', () => {
+    html.classList.toggle('unscroll');
     menu.classList.toggle('menu__list--active');
+    menuBtn.classList.toggle('open');
 })
