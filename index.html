@@ -17,6 +17,30 @@
 
 </head>
 <body>
+<!--	      modal-->
+<div class="modal">
+	<div class="modal__box">
+		<button class="modal__close-btn" id="close-my-modal-btn">
+			<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+				      fill="#FFFFFF" />
+				<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#FFFFFF" />
+			</svg>
+		</button>
+		<form class="form">
+			<h3 class="form__title title">Оставить заявку</h3>
+			<label>
+				<input class="form__input" type="text" placeholder="Как Вас зовут?">
+				<input class="form__input" type="tel" placeholder="Ваш телефон">
+			</label>
+			<button class="form__button button__white button" type="submit">Отправить заявку</button>
+			<div class="form__policy-container">
+				<p class="policy">Отправляя нам свои данные Вы даете свое согласие <br> на обработку своих персональных данных</p>
+				<img class="logo__img form__logo" src="./images/svg/carprofit-logo1.svg" alt="logo">
+			</div>
+		</form>
+	</div>
+</div>
 <div class="wrapper">
   <!--header-->
   <div class="header-main">
@@ -359,23 +383,9 @@
             </li>
           </ul>
         </div>
-<!--        <form class="footer__contacts-form form">-->
-<!--          <h3 class="footer__form-title title">Оставить заявку</h3>-->
-<!--          <label>-->
-<!--            <input class="footer__contacts-input" type="text" placeholder="Как Вас зовут?">-->
-<!--            <input class="footer__contacts-input" type="tel" placeholder="Ваш номер телефона">-->
-<!--          </label>-->
-<!--          <button class="form__button button__white button" type="submit">Отправить заявку</button>-->
-<!--          <div class="form__policy-container">-->
-<!--            <p class="policy">Отправляя нам свои данные Вы даете свое согласие <br> на обработку своих персональных данных</p>-->
-<!--            <img class="logo__img form__logo" src="./images/svg/carprofit-logo1.svg" alt="logo">-->
-
-<!--          </div>-->
-<!--        </form>-->
       </div>
     </div>
   </div>
-
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
