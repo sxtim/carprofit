@@ -35,7 +35,7 @@ $(function () {
     //
 });
 
-// BURGER
+//***BURGER***
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu__list');
 const html = document.querySelector('html');
@@ -45,7 +45,7 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('menu__btn--open');
 })
 
-// MODAL
+//***POPUP***
 // open modal
 document.getElementById('open-modal-btn').addEventListener( "click", () => {
     document.getElementById("modal-buyback").classList.add("modal-open");
@@ -61,6 +61,7 @@ window.addEventListener('keydown', (e) => {
         document.getElementById("modal-buyback").classList.remove("modal-open")
     }
 });
+// закрытие окна при клике вне его
 document.querySelector("#modal-buyback .modal__box").addEventListener('click', event => {
     event._isClickWithInModal = true;
 });
@@ -70,10 +71,34 @@ document.getElementById("modal-buyback").addEventListener('click', event => {
 });
 
 
-// FORM
-let validation = new JustValidate("#form");
+//***FORM***
+let tel = document.querySelector("#tel");
+let im = new Inputmask("+7(999) 999-99-99");
+im.mask(tel);
+let validation = new JustValidate("form");
 validation.addField('#name', [
     {
-        
+        rule: "required",
+        errorMessage: "Введите имя!"
+    },
+    {
+        rule: "minLength",
+        value: 3,
+        errorMessage: "Минимум 3 символа!"
+    },
+]).addField("#tel", [
+    {
+        validator: (value) => {
+            const phone = tel.inputmask.unmaskedvalue()
+            return Boolean(Number(phone) && phone.length > 0)
+        },
+        errorMessage: 'Введите телефон'
+    },
+    {
+        validator: (value) => {
+            const phone = tel.inputmask.unmaskedvalue()
+            return Boolean(Number(phone) && phone.length === 10)
+        },
+        errorMessage: 'Введите телефон полностью'
     }
-]);
+])

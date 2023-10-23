@@ -1015,7 +1015,7 @@ a svg #telegram {
 }
 
 .form__inp-text {
-    text-align: justify;
+    text-align: left;
     height: 120px;
     padding: 10px 5px;
 }
