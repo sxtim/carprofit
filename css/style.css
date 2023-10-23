@@ -1066,9 +1066,13 @@ input:focus:-ms-input-placeholder {
 }
 
 .form__policy-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-gap: 15px;*/
 }
 
 .policy {
@@ -1492,10 +1496,16 @@ input:focus:-ms-input-placeholder {
     }
 
     .form__policy-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: left;
-        grid-gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        /*display: grid;*/
+        /*grid-template-columns: 1fr;*/
+        /*justify-content: left;*/
+        /*grid-gap: 15px;*/
+    }
+
+    .policy {
+        text-align: center;
     }
 
     .form__logo {
