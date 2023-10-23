@@ -47,7 +47,7 @@ menuBtn.addEventListener('click', () => {
 
 //***POPUP***
 // open modal
-document.getElementById('open-modal-btn').addEventListener( "click", () => {
+document.getElementById('open-modal-btn').addEventListener("click", () => {
     document.getElementById("modal-buyback").classList.add("modal-open");
 });
 // close modal
@@ -102,3 +102,23 @@ validation.addField('#name', [
         errorMessage: 'Введите телефон полностью'
     }
 ])
+
+//     .onSuccess(async function () {
+//     let data = {
+//         name: document.getElementById("name").value,
+//         tel: tel.inputmask.unmaskedvalue(),
+//         msg: document.getElementById("msg").value
+//     }
+//
+//     let response = await fetch("mail.php", {
+//         method: "POST",
+//         body: JSON.stringify(data),
+//         headers: {
+//             "Content-Type": "application/json; charset=UTF-8"
+//         }
+//     })
+//
+//     let result = await response.text()
+//
+//     alert(result)
+// })
