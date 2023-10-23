@@ -985,7 +985,6 @@ a svg #telegram {
 
 .form {
     max-width: 600px;
-    height: auto;
     text-align: center;
     padding: 0 15px;
 }
@@ -1076,6 +1075,7 @@ input:focus:-ms-input-placeholder {
     text-align: left;
     font-size: 12px;
     font-weight: 200;
+    color: var(--white);
 }
 
 .form__logo {
@@ -1395,6 +1395,10 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
     .button {
         font-size: 15px;
         width: 180px;
@@ -1476,6 +1480,26 @@ input:focus:-ms-input-placeholder {
         font-size: 14px;
         width: 100px;
         height: 30px;
+    }
+
+    .form__input {
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .form__input::placeholder {
+        font-size: 16px;
+    }
+
+    .form__policy-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: left;
+        grid-gap: 15px;
+    }
+
+    .form__logo {
+        justify-self: left;
     }
 
     .footer__map {
