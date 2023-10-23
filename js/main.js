@@ -46,16 +46,28 @@ menuBtn.addEventListener('click', () => {
 })
 
 // MODAL
+// open modal
 document.getElementById('open-modal-btn').addEventListener( "click", () => {
     document.getElementById("modal-buyback").classList.add("modal-open");
 });
-
+// close modal
 document.getElementById("close-my-modal-btn").addEventListener("click", () => {
     document.getElementById("modal-buyback").classList.remove("modal-open");
 });
 
-
-
+// close modal with ESC
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById("modal-buyback").classList.remove("modal-open")
+    }
+});
+document.querySelector("#modal-buyback .modal__box").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+document.getElementById("modal-buyback").addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('modal-open');
+});
 
 
 // FORM

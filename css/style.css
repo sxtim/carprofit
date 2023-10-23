@@ -994,8 +994,8 @@ a svg #telegram {
 .form__input-inp {
     background-color: var(--white);
     width: 100%;
-    height: 75px;
-    color: var(--black);
+    height: 60px;
+    color: #313030;
     border: 1px solid #fff;
     display: block;
     margin: 0 0 28px 0;
@@ -1015,8 +1015,9 @@ a svg #telegram {
 }
 
 .form__inp-text {
+    text-align: justify;
     height: 120px;
-    padding: 5px 5px;
+    padding: 10px 5px;
 }
 
 
@@ -1492,12 +1493,17 @@ a svg #telegram {
     }
 
     .form__input-inp {
-        height: 60px;
+        height: 40px;
         margin-bottom: 15px;
     }
 
+    .form__inp-text {
+        height: 150px;
+        font-size: 12px;
+    }
+
     .form__input-inp::placeholder {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .form__policy-container {
