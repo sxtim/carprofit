@@ -39,14 +39,29 @@ $(function () {
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu__list');
 const html = document.querySelector('html');
-const multiBtn = document.querySelector('multibutton');
-
 menuBtn.addEventListener('click', () => {
     html.classList.toggle('unscroll');
     menu.classList.toggle('menu__list--active');
     menuBtn.classList.toggle('menu__btn--open');
 })
 
-multiBtn.addEventListener('click', () => {
-    multiBtn.classList.toggle('open')
-})
+// MODAL
+document.getElementById('open-modal-btn').addEventListener( "click", () => {
+    document.getElementById("modal-buyback").classList.add("modal-open");
+});
+
+document.getElementById("close-my-modal-btn").addEventListener("click", () => {
+    document.getElementById("modal-buyback").classList.remove("modal-open");
+});
+
+
+
+
+
+// FORM
+let validation = new JustValidate("#form");
+validation.addField('#name', [
+    {
+        
+    }
+]);

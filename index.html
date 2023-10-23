@@ -18,7 +18,7 @@
 </head>
 <body>
 <!--	      modal-->
-<div class="modal">
+<div id="modal-buyback" class="modal">
 	<div class="modal__box">
 		<button class="modal__close-btn" id="close-my-modal-btn">
 			<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,11 +27,12 @@
 				<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#FFFFFF" />
 			</svg>
 		</button>
-		<form class="form">
+		<form id="form" class="form" autocomplete="off">
 			<h3 class="form__title title">Оставить заявку</h3>
 			<label>
-				<input class="form__input" type="text" placeholder="Как Вас зовут?">
-				<input class="form__input" type="tel" placeholder="Ваш телефон">
+				<input id="name" class="form__input-inp" type="text"  placeholder="Как Вас зовут?" autocomplete="off">
+				<input id="tel" class="form__input-inp" type="tel" placeholder="Ваш телефон" autocomplete="off">
+				<textarea class="form__input-inp form__inp-text" name="msg" id="msg"  placeholder="Ваш вопрос" autocomplete="off"></textarea>
 			</label>
 			<button class="form__button button__white button" type="submit">Отправить заявку</button>
 			<div class="form__policy-container">
@@ -164,7 +165,7 @@
             <p>“под ключ”</p></h1>
           <h2 class="top__subtitle">От вас только желание Оценить</h2>
           <img class="top__banner" src="./images/svg/banner.svg" alt="banner">
-          <button class="button button__white top__button" type="button">оцени свой автомобиль</button>
+          <button id="open-modal-btn" class="button button__white top__button" type="button">оцени свой автомобиль</button>
         </div>
       </div>
     </section>
@@ -391,6 +392,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/just-validate.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
