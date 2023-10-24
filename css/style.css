@@ -155,6 +155,7 @@ a {
 }
 
 .multibutton__title {
+    font-family: inherit;
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
@@ -165,8 +166,15 @@ a {
 }
 
 .multibutton__title:hover {
+    cursor: pointer;
     color: black;
 }
+
+.multibutton__icon:hover {
+    cursor: pointer;
+    color: black;
+}
+
 
 .multibutton__item {
     display: flex;
@@ -175,6 +183,7 @@ a {
     transform: scaleX(0.4) scaleY(0.4) translateY(150px);
     opacity: 0;
     visibility: hidden;
+    cursor: pointer;
 }
 
 .multibutton__button {
@@ -250,7 +259,7 @@ a {
     fill: black;
 }
 
-/*button__burger*/
+/*BURGER*/
 .menu__btn {
     position: relative;
     z-index: 8;
