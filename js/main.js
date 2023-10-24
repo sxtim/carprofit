@@ -39,17 +39,36 @@ $(function () {
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu__list');
 const html = document.querySelector('html');
+const menuLinks = document.querySelectorAll(".menu__list-link");
+
 menuBtn.addEventListener('click', () => {
     html.classList.toggle('unscroll');
     menu.classList.toggle('menu__list--active');
     menuBtn.classList.toggle('menu__btn--open');
 })
 
-//***POPUP***
-// open modal
-document.getElementById('open-modal-btn').addEventListener("click", () => {
-    document.getElementById("modal-buyback").classList.add("modal-open");
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        menu.classList.remove('menu__list--active');
+        html.classList.remove("unscroll");
+        menuBtn.classList.remove('menu__btn--open');
+    });
 });
+
+
+
+//***POPUP***
+const btnsBuyback = document.querySelectorAll(".btn-open-modal-buyback");
+const modalBuyback = document.getElementById("modal-buyback");
+// open modal
+
+btnsBuyback.forEach((btns) => {
+   btns.addEventListener("click", () => {
+       modalBuyback.classList.add("modal-open");
+   });
+});
+
+
 // close modal
 document.getElementById("close-my-modal-btn").addEventListener("click", () => {
     document.getElementById("modal-buyback").classList.remove("modal-open");
