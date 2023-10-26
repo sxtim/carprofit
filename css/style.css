@@ -76,6 +76,7 @@ a {
 }
 
 .button__white {
+    color: var(--black);
     background-color: white;
     transition: 0.5s;
     border: 1px solid black;
@@ -1397,6 +1398,11 @@ a svg #telegram {
     .banner__t3 {
         font-size: 110px;
         margin-bottom: 20px;
+    }
+
+    .benefits__banner-t1 {
+        display: flex;
+        flex-direction: column;
     }
 
     .benefits__banner-t2 {
