@@ -545,7 +545,7 @@ a svg #telegram {
 }
 
 /*benefits*/
-.benefits__inner {
+.benefits__content {
     position: relative;
     display: flex;
     align-items: center;
@@ -619,6 +619,21 @@ a svg #telegram {
 
 }
 
+.benefits__banner-t2 {
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.benefits__banner-t2 img {
+    width: 35px;
+    height: auto;
+}
+
 /*buyback*/
 .buyback__title {
     margin-left: 620px;
@@ -686,12 +701,12 @@ a svg #telegram {
     text-align: center;
 }
 
-.docs__content {
+.banner {
     position: relative;
     margin: 80px 0 0 0;
 }
 
-.docs__content-img {
+.banner__img {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -699,7 +714,7 @@ a svg #telegram {
     height: auto;
 }
 
-.docs__content-banner {
+.banner__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -707,20 +722,21 @@ a svg #telegram {
     margin-left: 390px;
 }
 
-.docs__content-t1 {
+.banner__t1 {
     color: var(--black);
     opacity: 80%;
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 3px;
     line-height: 170%;
+    text-align: center;
 }
 
-.docs__content-t1 span {
+.banner__t1 span {
     color: var(--gray);
 }
 
-.docs__content-t2 {
+.banner__t2 {
     color: var(--black);
     opacity: 70%;
     font-size: 36px;
@@ -729,11 +745,11 @@ a svg #telegram {
     margin: 0 0 30px 0;
 }
 
-.docs__content-t2 span {
+.banner__t2 span {
     color: var(--gray);
 }
 
-.docs__content-t3 {
+.banner__t3 {
     position: absolute;
     color: rgba(151, 151, 151, 0.15);
     font-size: 200px;
@@ -1140,7 +1156,7 @@ a svg #telegram {
         margin-bottom: 20px;
     }
 
-    .benefits__inner {
+    .benefits__content {
         display: flex;
         flex-direction: column;
     }
@@ -1152,6 +1168,32 @@ a svg #telegram {
     .benefits__img {
         position: static;
     }
+
+    .banner__img {
+        position: static;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner__content {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__t3 {
+        font-size: 160px;
+        text-align: center;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
 
     .buyback__list {
         /*min  default   min           min media  наш media  min media*/
@@ -1267,34 +1309,10 @@ a svg #telegram {
         height: auto;
     }
 
-    .docs__content-img {
-        position: static;
-    }
-
-    .docs__content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     .docs__list-img {
         width: 70px;
         height: auto;
-    }
-
-    .docs__content-banner {
-        margin: 0;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .docs__content-t3 {
-        font-size: 160px;
-        text-align: center;
-        right: 50%;
-        transform: translate(50%, 0);
     }
 
     .about__inner {
@@ -1333,7 +1351,6 @@ a svg #telegram {
 
     .benefits__item {
         padding: 6px 6px 6px 46px;
-
     }
 
     .benefits__item:before {
@@ -1365,21 +1382,32 @@ a svg #telegram {
         gap: 25px;
     }
 
-    .docs__content-t1 {
+    .banner__t1 {
         font-size: 24px;
         line-height: 100%;
         margin-bottom: 10px;
     }
 
-    .docs__content-t2 {
+    .banner__t2 {
         font-size: 32px;
         line-height: 100%;
         margin-bottom: 10px;
     }
 
-    .docs__content-t3 {
+    .banner__t3 {
         font-size: 110px;
         margin-bottom: 20px;
+    }
+
+    .benefits__banner-t2 {
+        font-size: 20px;
+        line-height: 100%;
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+
+    .benefits__banner-t2 img {
+        width: 20px;
     }
 
     .docs__item-title {
@@ -1471,23 +1499,23 @@ a svg #telegram {
         flex-direction: column;
     }
 
-    .docs__content {
+    .banner {
         margin-top: 35px;
     }
 
-    .docs__content-t1 {
+    .banner__t1 {
         font-size: 22px;
         line-height: 100%;
         margin-bottom: 10px;
     }
 
-    .docs__content-t2 {
+    .banner__t2 {
         font-size: 28px;
         line-height: 100%;
         margin-bottom: 10px;
     }
 
-    .docs__content-t3 {
+    .banner__t3 {
         font-size: 86px;
     }
 
@@ -1576,11 +1604,11 @@ a svg #telegram {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .docs__content-t3 {
+    .banner__t3 {
         font-size: 70px;
     }
 
-    .docs__content-t2 {
+    .banner__t2 {
         font-size: 20px;
     }
 
