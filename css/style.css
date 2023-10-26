@@ -1516,7 +1516,16 @@ a svg #telegram {
     }
 
     .banner__t3 {
-        font-size: 86px;
+        font-size: 78px;
+    }
+
+    .benefits__banner-t2 {
+        font-size: 18px;
+        gap: 5px;
+    }
+
+    .benefits__banner-t2 img {
+        width: 15px;
     }
 
     .carousel .slick-dots button {
