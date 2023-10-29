@@ -16,35 +16,35 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--	      modal-->
-<div id="modal-buyback" class="modal">
-  <div class="modal__box">
-    <button class="modal__close-btn" id="close-my-modal-btn">
-      <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-              fill="#FFFFFF"/>
-        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#FFFFFF"/>
-      </svg>
-    </button>
-    <form id="form" class="form" autocomplete="off">
-      <h3 class="form__title title">Оставить заявку</h3>
-      <label>
-        <input id="name" class="form__input-inp" type="text" placeholder="Как Вас зовут?" autocomplete="off">
-        <input id="tel" class="form__input-inp" type="tel" placeholder="Ваш телефон" autocomplete="off">
-        <textarea class="form__input-inp form__inp-text" name="msg" id="msg" placeholder="Ваш вопрос"
-                  autocomplete="off"></textarea>
-      </label>
-      <button class="form__button button__white button" type="submit">Отправить заявку</button>
-      <div class="form__policy-container">
-        <p class="policy">Отправляя нам свои данные Вы даете согласие на обработку своих персональных данных</p>
-        <img class="logo__img form__logo" src="./images/svg/carprofit-logo1.svg" alt="logo">
-      </div>
-    </form>
-  </div>
-</div>
 <div class="wrapper">
   <!--header-->
-  <div class="header-main">
+	<!--	      modal-->
+	<div id="modal-buyback" class="modal">
+		<div class="modal__box">
+			<button class="modal__close-btn" id="close-my-modal-btn">
+				<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+					      fill="#FFFFFF"/>
+					<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#FFFFFF"/>
+				</svg>
+			</button>
+			<form id="form" class="form" autocomplete="off">
+				<h3 class="form__title title">Оставить заявку</h3>
+				<label>
+					<input id="name" class="form__input-inp" type="text" placeholder="Как Вас зовут?" autocomplete="off">
+					<input id="tel" class="form__input-inp" type="tel" placeholder="Ваш телефон" autocomplete="off">
+					<textarea class="form__input-inp form__inp-text" name="msg" id="msg" placeholder="Ваш вопрос"
+					          autocomplete="off"></textarea>
+				</label>
+				<button class="form__button button__white button" type="submit">Отправить заявку</button>
+				<div class="form__policy-container">
+					<p class="policy">Отправляя нам свои данные Вы даете согласие на обработку своих персональных данных</p>
+					<img class="logo__img form__logo" src="./images/svg/carprofit-logo1.svg" alt="logo">
+				</div>
+			</form>
+		</div>
+	</div>
+  <header class="header-main">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="index.html">
@@ -162,7 +162,8 @@
         </nav>
       </div>
     </div>
-  </div>
+  </header>
+	
   <div class="main">
     <!--top-->
     <section class="top _section" style="background-image: url(./images/top-bg.jpg);">
@@ -416,8 +417,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/wow.min.js"></script>
+<!--<script src="js/jquery.fancybox.min.js"></script>-->
+<!--<script src="js/wow.min.js"></script>-->
 <script src="js/just-validate.min.js"></script>
 <script src="js/inputmask.min.js"></script>
 <script src="js/main.js"></script>
